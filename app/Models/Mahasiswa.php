@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+class Mahasiswa extends Model
+{
+    use HasFactory;
+    // Kolom yang boleh diisi melalui mass assignment
+    protected $fillable = ['nim', 'nama', 'email', 'prodi', 'semester'];
+}
